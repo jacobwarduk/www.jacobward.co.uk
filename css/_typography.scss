@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'luckiest_guy_regularwebfont';
+  src: url('fonts/luckiest_guy_regularwebfont.ttf') format('truetype');
+}
+
+%feature-font {
+  font-family: 'luckiest_guy_regularwebfont';
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.feature-font,
+.menu,
+.title,
+h1, h2, h3, h4, h5, h6 {
+
+  @extend %feature-font;
+
+  .no-generatedcontent & {
+    display: none;
+  }
+}

@@ -1,0 +1,93 @@
+@import "_typography";
+@import "_colors";
+
+
+body, html {
+	min-height: 100%;
+  padding: 20px;
+  margin: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+	text-align: center;
+	background: #333;
+	background: -webkit-gradient(radial, center top, 0, center top, 600, color-stop(0, #2A2E30), color-stop(1, #111414));
+	background: -webkit-radial-gradient(center top, circle closest-corner, #2A2E30, #111414);
+	background: -moz-radial-gradient(center top, circle closest-corner, #2A2E30, #111414);
+	background: -ms-radial-gradient(center top, circle closest-corner, #2A2E30, #111414);
+	background: -o-radial-gradient(center top, circle closest-corner, #2A2E30, #111414);
+	background: radial-gradient(center top, circle closest-corner, #2A2E30, #111414);
+	font: 0.8em Helvetica, Arial;
+  color: $white;
+
+  h1 {
+    margin: 0;
+    color: $white;
+    font-weight: 500;
+  }
+
+  a {
+    color: $white;
+  }
+
+
+
+
+
+  section {
+    &.blocks {
+      ul {
+        list-style-type: none;
+
+        li {
+          width: 100px;
+          height: 100px;
+          border: 1px solid $grey-outline;
+          margin: 2px;
+          padding: 1px;
+          display: inline-block;
+          text-align: center;
+          vertical-align: middle;
+
+        }
+      }
+    }
+  }
+
+
+
+
+  footer {
+    a {
+      text-decoration: none;
+      &:hover {
+      }
+
+      &.html {
+        color: $html-orange-highlight;
+        &:hover {
+          color: $html-orange-lowlight;
+        }
+      }
+      &.css {
+        color: $css-blue-highlight;
+        &:hover {
+          color: $css-blue-lowlight;
+        }
+      }
+      &.javascript {
+        color: $js-yellow-highlight;
+        &:hover {
+          color: $js-yellow-lowlight;
+        }
+      }
+    }
+
+    i {
+      &.fa-heart {
+        color: $red;
+      }
+    }
+  }
+}
