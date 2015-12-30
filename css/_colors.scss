@@ -1,8 +1,41 @@
-
+/* Primary pallette for screen */
+$black: #000;
 $white: #fff;
+$tagline-grey: #555;
+$light-grey: #555;
+$dark-grey: #333;
+$blue-link: #00aee8;
+$primary-orange: #fb5a17;
+$green: #00cc00;
 $red: #f00;
 
-$grey-outline: #555;
+/* Secondary pallette for screen */
+$block-one: #94379D;
+$block-two: #97B62F;
+$block-three: #E30466;
+$block-four: #066799;
+$block-five: #98B72E;
+$block-six: #20567D;
+$block-seven: #C51A5C;
+$block-eight: #13946D;
+$block-nine: #CE1A61;
+$block-ten: #52901A;
+
+
+// Block colours
+$blockColors:
+  $block-one
+  $block-two
+  $block-three
+  $block-four
+  $block-five
+  $block-six
+  $block-seven
+  $block-eight
+  $block-nine
+  $block-ten;
+  $blockColorsLength: length($blockColors);
+
 
 $html-orange-highlight: #F16529;
 $html-orange-lowlight: #E44D26;
