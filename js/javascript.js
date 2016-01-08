@@ -1,6 +1,6 @@
 function parseXml(feed) {
   var parser = new DOMParser();
-  var xmlDoc = parser.parseFromString('http://www.feedforall.com/sample.xml', 'application/xml');
-  alert(JSON.stringify(xmlDoc));
+  var xmlDoc = parser.parseFromString(feed, 'application/xml');
+  // alert(JSON.stringify(xmlDoc));
   return xmlDoc;
 }
