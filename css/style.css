@@ -1,27 +1,38 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @font-face {
-  font-family: "Source Sans Pro",Helvetica,Arial,sans-serif; }
+  font-family: "Source Sans Pro";
+  src: url("fonts/SourceSansPro-Regular.otf"); }
 
-.feature-font,
-.menu,
-.title,
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#main-container {
   font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.no-generatedcontent .feature-font, .no-generatedcontent
-.menu, .no-generatedcontent
-.title, .no-generatedcontent
-h1, .no-generatedcontent h2, .no-generatedcontent h3, .no-generatedcontent h4, .no-generatedcontent h5, .no-generatedcontent h6 {
+.no-generatedcontent h1, .no-generatedcontent
+h2, .no-generatedcontent
+h3, .no-generatedcontent
+h4, .no-generatedcontent
+h5, .no-generatedcontent
+h6, .no-generatedcontent
+#main-container {
   display: none; }
 
 /* Primary pallette for screen */
-/* Secondary pallette for screen */
+.blue {
+  color: #30A9DC; }
+
+.red {
+  color: #f00; }
+
 body, html {
   height: 100%;
-  padding: 0;
+  padding: 0 10px;
   margin: 0; }
 
 body {
@@ -43,43 +54,38 @@ body {
       font-weight: 500; }
     body #main-container a {
       color: #00aee8; }
+    body #main-container hr {
+      width: 150px;
+      height: 0px;
+      border: 0;
+      border-top: 1px solid #e7e7e7; }
+    body #main-container .github-follow {
+      position: absolute;
+      right: -10px;
+      top: 10px; }
+      @media screen and (max-width: 468px) {
+        body #main-container .github-follow {
+          position: relative;
+          right: 0;
+          margin: 0 auto -15px auto; } }
     body #main-container .header-photo {
       border-radius: 50%;
       max-width: 50%;
-      margin: 20px auto;
+      margin: 40px auto 20px auto;
       filter: gray;
       filter: grayscale(1);
       -webkit-filter: grayscale(1); }
       body #main-container .header-photo:hover {
         filter: none;
         -webkit-filter: grayscale(0); }
-    body #main-container nav {
-      margin: 10px; }
-      body #main-container nav i {
-        background: transparent linear-gradient(to bottom, #FFF 0%, #F9F9F9 100%) repeat scroll 0% 0%;
-        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
-        width: 1.5em;
-        height: 1.5em;
-        padding: inherit;
-        border-radius: 50%;
-        color: #555;
-        margin: 2px; }
-        body #main-container nav i.fa {
-          font-size: 1.5em;
-          line-height: 1.5em; }
-          body #main-container nav i.fa.fa-plus-circle {
-            color: #00cc00; }
-          body #main-container nav i.fa.fa-times-circle {
-            color: #f00; }
-        body #main-container nav i:hover {
-          color: #333;
-          cursor: pointer; }
+    body #main-container section a.pinterest-link {
+      color: #f00; }
     body #main-container footer {
       position: absolute;
       bottom: 0;
       left: 0;
       width: 100%;
-      padding: 5px 0; }
+      padding: 10px 0; }
       body #main-container footer a {
         text-decoration: none; }
         body #main-container footer a.html {
@@ -94,5 +100,10 @@ body {
           color: #F1BF26; }
           body #main-container footer a.javascript:hover {
             color: #E5A228; }
-      body #main-container footer i.fa-heart {
-        color: #f00; }
+        body #main-container footer a.artificial {
+          color: #A5DF00; }
+          body #main-container footer a.artificial:hover {
+            color: #04B431; }
+      body #main-container footer .heart {
+        color: #f00;
+        font-size: 1.2em; }

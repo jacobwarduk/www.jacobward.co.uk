@@ -2,14 +2,17 @@
 <html>
 <head>
   <title>Jacob Ward</title>
-  <meta name="description" content="Web &amp; mobile application developer. Published author on web scraping and Express.js development." />
+  <meta name="description" content="Web &amp; mobile application developer. Published author on web scraping, automation, data mining, and Express.js development." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/style.min.css" />
-  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
   <script src="js/javascript.min.js"></script>
 </head>
-<body>
+<body onload="parseXml('http://www.jacobward.co.uk/feed/')">
   <div id="main-container">
+
+    <div class="github-follow">
+      <a aria-label="Follow @jacobwarduk on GitHub" href="https://github.com/jacobwarduk" class="github-button">Follow @jacobwarduk</a>
+    </div>
 
     <header>
 
@@ -18,34 +21,36 @@
       <h1>Jacob Ward</h1>
       <h2>Web &amp; Mobile Application Developer</h2>
 
-      <nav>
-        <i class="fa fa-wordpress"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-linkedin"></i>
-        <i class="fa fa-github"></i>
-        <i class="fa fa-skype"></i>
-        <i class="fa fa-rss"></i>
-        <i class="fa fa-plus-circle"></i>
-        <i class="fa fa-times-circle"></i>
-      </nav>
-
     </header>
 
-    <section class="blocks">
+    <section class="social">
+      <p>
+        Ever notice how all social media icons are blue? Seriously.
+        <br />
+        <nav>
+          <a href="#">WordPress</a>, <a href="https://uk.linkedin.com/in/jacobwarduk" target="_blank">LinkedIn</a>, <a href="https://twitter.com/jacobwarduk" target="_blank">Twitter</a>, <a href="https://www.facebook.com/jacobwarduk" target="_blank">Facebook</a>, <a href="skype:jacobwarduk?call" target="_blank">Skype</a>.
+        </nav>
+        <br />
+        It's like they all follow the <i>tampon commercial convention</i>, apart from those filthy bastards at <a href="http://www.youtube.com/watch?v=qF7MsBtZx08&t=0m8s" target="_blank" class="pinterest-link">Pinterest</a>.
+      </p>
+    </section>
 
+    <hr />
 
+    <section class="blog">
 
     </section>
 
-
-    <section class="">
-      <h2></h2>
+    <section class="contact">
+      If you want to hear more interesting thoughts like this, or <strong>get in contact</strong> for any other sort of reason, you can always <strong>reach me <a href="#">here</a></strong>.
     </section>
 
     <footer>
-      Built with <i class="fa fa-heart"></i> using <a href="http://www.html5rocks.com" target="_blank" class="html">HTML5</a>, <a href="https://developer.mozilla.org/en/docs/Web/CSS/CSS3" target="_blank" class="css">CSS3</a> and <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="javascript">JavaScript</a>.
+      Baked with <span class="red heart">&hearts;</span> using <a href="http://www.html5rocks.com" target="_blank" class="html">HTML5</a>, <a href="https://developer.mozilla.org/en/docs/Web/CSS/CSS3" target="_blank" class="css">CSS3</a>, <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="javascript">JavaScript</a> and no artificial ingredients.
     </footer>
 
   </div>
+  <!-- Place this tag right after the last button or just before your close body tag. -->
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>

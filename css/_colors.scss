@@ -4,38 +4,11 @@ $white: #fff;
 $tagline-grey: #555;
 $light-grey: #555;
 $dark-grey: #333;
+$hr-grey: #e7e7e7;
 $blue-link: #00aee8;
 $primary-orange: #fb5a17;
 $green: #00cc00;
 $red: #f00;
-
-/* Secondary pallette for screen */
-$block-one: #94379D;
-$block-two: #97B62F;
-$block-three: #E30466;
-$block-four: #066799;
-$block-five: #98B72E;
-$block-six: #20567D;
-$block-seven: #C51A5C;
-$block-eight: #13946D;
-$block-nine: #CE1A61;
-$block-ten: #52901A;
-
-
-// Block colours
-$blockColors:
-  $block-one
-  $block-two
-  $block-three
-  $block-four
-  $block-five
-  $block-six
-  $block-seven
-  $block-eight
-  $block-nine
-  $block-ten;
-  $blockColorsLength: length($blockColors);
-
 
 $html-orange-highlight: #F16529;
 $html-orange-lowlight: #E44D26;
@@ -43,3 +16,12 @@ $css-blue-highlight: #30A9DC;
 $css-blue-lowlight: #0C73B8;
 $js-yellow-highlight: #F1BF26;
 $js-yellow-lowlight: #E5A228;
+$artificial-green-highlight: #A5DF00;
+$artifical-green-lowlight: #04B431;
+
+.blue {
+  color: $css-blue-highlight;
+}
+.red {
+  color: $red;
+}
