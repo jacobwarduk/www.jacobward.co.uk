@@ -75,13 +75,35 @@ body {
 		}
 
 		section {
-
-			a {
-				&.pinterest-link {
-					color: $red;
+			&.social {
+				a {
+					&.pinterest-link {
+						color: $red;
+					}
+				}
+				h3 {
+					display: none;
 				}
 			}
 
+			&.blog {
+				article {
+					margin: 5px 0;
+				}
+				h3 {
+					font-size: 1em;
+					font-weight: 550;
+					display: inline;
+				}
+
+				text-align: left;
+			}
+
+			&.contact {
+				h3 {
+					display: none;
+				}
+			}
 		}
 
 
@@ -92,6 +114,7 @@ body {
 			left: 0;
 			width: 100%;
 			padding: 10px 0;
+			cursor: default;
 
 			a {
 				text-decoration: none;
@@ -131,3 +154,29 @@ body {
 		}
 	}
 }
+
+
+
+// ********** THE TESTING GROUND ********** //
+// 
+//
+// [title]{
+// 	position:relative;
+// }
+// [title]:after{
+// 	content:attr(title);
+// 	color:#fff;
+// 	background:#333;
+// 	background:rgba(51,51,51,0.75);
+// 	padding:5px;
+// 	position:absolute;
+// 	left:-9999px;
+// 	opacity:0;
+// 	bottom:100%;
+// 	white-space:nowrap;
+// 	-webkit-transition:0.25s linear opacity;
+// }
+// [title]:hover:after{
+// 	left:5px;
+// 	opacity:1;
+// }
