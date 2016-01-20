@@ -8,6 +8,11 @@ body, html {
 	height: 100%;
 	padding: 0 10px;
 	margin: 0;
+
+	a {
+		cursor: pointer;
+		text-decoration: underline;
+	}
 }
 
 body {
@@ -75,6 +80,7 @@ body {
 		}
 
 		section {
+
 			&.social {
 				a {
 					&.pinterest-link {
@@ -96,10 +102,11 @@ body {
 					display: inline;
 				}
 
-				text-align: left;
+				// text-align: left;
 			}
 
 			&.contact {
+				margin-bottom: 50px;
 				h3 {
 					display: none;
 				}
@@ -114,7 +121,8 @@ body {
 			left: 0;
 			width: 100%;
 			padding: 10px 0;
-			cursor: default;
+			margin-top: 25px;
+			background-color: $white;
 
 			a {
 				text-decoration: none;
@@ -158,7 +166,6 @@ body {
 
 
 // ********** THE TESTING GROUND ********** //
-// 
 //
 // [title]{
 // 	position:relative;
