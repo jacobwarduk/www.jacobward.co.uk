@@ -124,3 +124,37 @@ body {
       body #main-container footer .heart {
         color: #f00;
         font-size: 1.2em; }
+
+/* ********** THE TESTING GROUND ********** */
+div.window-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.2); }
+  div.window-wrapper section.window {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+    -moz-box-shadow: 0 2px 4px #151515;
+    -webkit-box-shadow: 0 2px 4px #151515;
+    box-shadow: 0 2px 4px #151515; }
+    div.window-wrapper section.window a.close_btn {
+      display: block;
+      margin-top: 36px;
+      height: 36px;
+      background: #F16529;
+      color: white;
+      line-height: 36px;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer; }
+      div.window-wrapper section.window a.close_btn:hover {
+        background: #bf3a18; }

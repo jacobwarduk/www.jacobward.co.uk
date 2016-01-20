@@ -165,25 +165,46 @@ body {
 
 
 
-// ********** THE TESTING GROUND ********** //
-//
-// [title]{
-// 	position:relative;
-// }
-// [title]:after{
-// 	content:attr(title);
-// 	color:#fff;
-// 	background:#333;
-// 	background:rgba(51,51,51,0.75);
-// 	padding:5px;
-// 	position:absolute;
-// 	left:-9999px;
-// 	opacity:0;
-// 	bottom:100%;
-// 	white-space:nowrap;
-// 	-webkit-transition:0.25s linear opacity;
-// }
-// [title]:hover:after{
-// 	left:5px;
-// 	opacity:1;
-// }
+/* ********** THE TESTING GROUND ********** */
+
+// The window
+div.window-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $white;
+	background: rgba(255,255,255,0.2);
+
+	section.window {
+		display: block;
+		width: 100%;
+		max-width: 360px;
+		margin: 40px auto;
+		padding: 20px;
+		background: $white;
+		border-radius: 10px;
+		border: 1px solid $tagline-grey;
+
+		-moz-box-shadow: 0 2px 4px darken($light-grey, 25%);
+		-webkit-box-shadow: 0 2px 4px darken($light-grey, 25%);
+		box-shadow: 0 2px 4px darken($light-grey, 25%);
+
+		a.close_btn {
+			display: block;
+			margin-top: 36px;
+			height: 36px;
+			background: $html-orange-highlight;
+			color: white;
+			line-height: 36px;
+			text-align: center;
+			border-radius: 5px;
+			cursor: pointer;
+
+			&:hover {
+				background: darken($html-orange-lowlight, 10%);
+			}
+		}
+	}
+}

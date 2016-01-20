@@ -1,3 +1,32 @@
+window.onload = function () {
+    window.Modal = function ($internals) {
+        var $close_btn, $modal, proto;
+        if (typeof $internals === 'string') {
+            proto = Modal.prototype;
+            $modal = document.createElement('div');
+            $modal.className = 'window-wrapper';
+            $modal.innerHTML = '<section class="window">' + $internals + '<a href="#" class="close_btn">Close</a></section>';
+            $close_btn = $modal.getElementsByClassName('close_btn')[0];
+            $close_btn.addEventListener('click', function () {
+                document.body.removeChild($modal);
+                return proto.IsActive = false;
+            });
+            if (!proto.IsActive) {
+                document.body.appendChild($modal);
+                proto.IsActive = true;
+                return false;
+            }
+        }
+    };
+
+    window.Modal.prototype.IsActive = false;
+    document.body.getElementsByClassName('pinterest-link')[0].addEventListener('click', function () {
+        return Modal('<iframe width="350" height="165" src="https://www.youtube.com/embed/qF7MsBtZx08?autoplay=true&t=0m8s" frameborder="0" allowfullscreen></iframe>', true);
+    });
+};
+
+
+
 // IIFE to read latest data from WordPress RSS feed
 
 /*
