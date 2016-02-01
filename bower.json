@@ -3,5 +3,7 @@
   "authors": [
     "Jacob Ward (@jacobwarduk)"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "font-awesome": "~4.5.0"
+  }
 }

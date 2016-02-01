@@ -65,7 +65,31 @@ body {
     body #main-container .github-follow {
       position: absolute;
       right: -10px;
-      top: 10px; }
+      top: 10px;
+      font-family: Helvetica,Arial,freesans,clean,sans-serif; }
+      body #main-container .github-follow .fa {
+        font-size: 1.2em; }
+      body #main-container .github-follow .button {
+        background-color: #eee;
+        background-image: linear-gradient(to bottom, #fcfcfc, #eee);
+        background-repeat: repeat-x;
+        padding: 0 5px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+        border: 1px solid #d5d5d5;
+        border-radius: 3px;
+        color: #333;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 700;
+        height: 18px;
+        line-height: 18px;
+        position: relative;
+        vertical-align: middle;
+        white-space: nowrap; }
+      body #main-container .github-follow a {
+        text-decoration: none; }
+      body #main-container .github-follow .github-follow:not([id]) {
+        cursor: auto !important; }
       @media screen and (max-width: 468px) {
         body #main-container .github-follow {
           position: relative;
@@ -73,7 +97,6 @@ body {
           margin: 0 auto -15px auto; } }
     body #main-container .header-photo {
       border-radius: 50%;
-      max-width: 50%;
       margin: 40px auto 20px auto;
       filter: gray;
       filter: grayscale(1);
@@ -132,12 +155,11 @@ div.window-wrapper {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
-  background: rgba(255, 255, 255, 0.2); }
+  background: rgba(0, 0, 0, 0.7); }
   div.window-wrapper section.window {
+    /* ----------- Mobile Breakpoint ----------- */
     display: block;
-    width: 100%;
-    max-width: 360px;
+    max-width: 640px;
     margin: 40px auto;
     padding: 20px;
     background: #fff;
@@ -146,9 +168,12 @@ div.window-wrapper {
     -moz-box-shadow: 0 2px 4px #151515;
     -webkit-box-shadow: 0 2px 4px #151515;
     box-shadow: 0 2px 4px #151515; }
+    @media only screen and (max-width: 768px) {
+      div.window-wrapper section.window {
+        max-width: 85%; } }
     div.window-wrapper section.window a.close_btn {
       display: block;
-      margin-top: 36px;
+      margin-top: 16px;
       height: 36px;
       background: #F16529;
       color: white;
