@@ -1,14 +1,3 @@
-# www.jacobward.co.uk
+# Jacob Ward
 
-You can see this online soon at http://www.jacobward.co.uk.
-
-
-### Instructions
-
-Pretty standard...
-
-`$ npm install`
-
-`$ bower install`
-
-`$ grunt`
+**Just working on the re-development of my personal website (http://www.jacobward.co.uk).**
