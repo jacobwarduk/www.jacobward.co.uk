@@ -17,9 +17,6 @@ module.exports = function(grunt) {
         },
 
         uglify: {
-            options: {
-                banner: "/*! <%= pkg.name %> <%= grunt.template.today('dd-mm-yyyy') %> */\n"
-            },
             dist: {
                 files: {
                     "js/javascript.min.js": "js/javascript.js",
@@ -29,9 +26,6 @@ module.exports = function(grunt) {
         },
 
         sass: {
-            options: {
-                banner: "/*! <%= pkg.name %> <%= grunt.template.today('dd-mm-yyyy') %> */\n"
-            },
             dist: {
                 files: {
                     "css/style.css": "css/style.scss"
@@ -40,9 +34,6 @@ module.exports = function(grunt) {
         },
 
         cssmin: {
-            options: {
-                banner: "/*! <%= pkg.name %> <%= grunt.template.today('dd-mm-yyyy') %> */\n"
-            },
             dist: {
                 files: {
                     "css/style.min.css": "css/style.css"
