@@ -19,8 +19,7 @@ module.exports = function(grunt) {
         uglify: {
             dist: {
                 files: {
-                    "js/javascript.min.js": "js/javascript.js",
-                    "js/app.min.js": "js/app.js"
+                    "assets/js/app.min.js": "assets/js/app.js"
                 }
             }
         },
@@ -28,7 +27,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    "css/style.css": "css/style.scss"
+                    "assets/scss/app.css": "assets/scss/app.scss"
                 }
             }
         },
@@ -36,13 +35,13 @@ module.exports = function(grunt) {
         cssmin: {
             dist: {
                 files: {
-                    "css/style.min.css": "css/style.css"
+                    "assets/css/app.min.css": "assets/css/app.css"
                 }
             }
         },
 
         watch: {
-            files: ["css/style.scss", "css/_colors.scss", "css/_typography.scss", "js/javascript.js", "html/index.html"],
+            files: ["assets/scss/app.scss", "assets/scss/_colors.scss", "assets/scss/_typography.scss", "assets/js/app.js", "assets/html/index.html"],
             tasks: ["uglify", "sass", "cssmin", "htmlmin"]
         }
 
