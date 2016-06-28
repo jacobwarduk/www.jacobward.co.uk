@@ -11,7 +11,7 @@ module.exports = function(grunt) {
               collapseWhitespace: true
             },
             files: {
-              'index.html': 'html/index.html'
+              'index.html': 'assets/html/index.html'
             }
           }
         },
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    "assets/scss/app.css": "assets/scss/app.scss"
+                    "assets/css/app.css": "assets/scss/app.scss"
                 }
             }
         },
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
         },
 
         watch: {
-            files: ["assets/scss/app.scss", "assets/scss/_colors.scss", "assets/scss/_typography.scss", "assets/js/app.js", "assets/html/index.html"],
+            files: ["assets/scss/app.scss", "assets/scss/_typography.scss", "assets/scss/_colours.scss", "assets/js/app.js", "assets/html/index.html"],
             tasks: ["uglify", "sass", "cssmin", "htmlmin"]
         }
 

@@ -7,3 +7,4 @@ assets/libs
 *.git
 wp-*
 !/wp-content
+old
