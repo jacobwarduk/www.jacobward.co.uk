@@ -1,0 +1,18 @@
+{
+  "qualifyingElement": {
+    "allowWithClass": true,
+    "allowWithAttribute": true,
+    "allowWithId": false
+  },
+  "zeroUnit": {
+    "style": "no_unit"
+  },
+  "decimalZero": "none",
+  "propertyOrdering": false,
+  "hexLength": {
+    "style": "short"
+  },
+  "idSelector": true,
+  "importantRule": true
+
+}

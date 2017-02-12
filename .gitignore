@@ -1,0 +1,8 @@
+# Node modules
+*node_modules/*
+
+# WebStorm
+.idea/
+
+# Mac
+.DS_Store
