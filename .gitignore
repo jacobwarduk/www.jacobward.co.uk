@@ -8,3 +8,11 @@ assets/libs
 wp-*
 !/wp-content
 old
+# Node modules
+*node_modules/*
+
+# WebStorm
+.idea/
+
+# Mac
+.DS_Store
